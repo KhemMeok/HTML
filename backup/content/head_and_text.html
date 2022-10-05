@@ -1,0 +1,81 @@
+<html lang="km">
+
+<head>
+    <title>
+        ចំណងជើងនឹងអត្ថបទ (head and text)
+    </title>
+    <style type="text/css">
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Khmer OS Moul Light';
+            color: blue;
+        }
+
+        ul>li {
+            display: inline-block;
+            text-decoration-line: none;
+            box-shadow: 10px;
+        }
+
+        p>span {
+            color: red;
+        }
+
+        /*
+        ជ្រើស li & a ដែរជាជំនានក្រោយរបស់ ul
+        */
+        ul li {
+            color: orange;
+        }
+
+        ul li,
+        ul a,
+        p span {
+            color: orange;
+        }
+
+        ul a:link {
+            color: yellow;
+        }
+
+        ul a:visited {
+            color: brown;
+        }
+
+        ul a:hover {
+            color: red;
+        }
+        /* ជ្រើសរើសអក្ស ឬ​ ធាតុ ផ្សេងទៀត បន្ទាតទី១ យកមកកែប្រែ */
+        h1::first-letter {
+            border-radius: 50%;
+            background-color: cyan;
+            padding: 1em;
+        }
+    </style>
+
+<body>
+    <h1>អត្ថបទ</h1>
+    <p>
+        <span>សេចក្ដីអធិប្បាយនៃរឿងអ្វីមួយ</span> <br>
+        <span>ខ្លឹមសាររបស់អ្នកនិពន្ធ</span> <br>
+        <span>សេចក្ដីចុះផ្សាយក្នុងព័តមានណាមួយ</span>
+
+    </p>
+    <h2>ប្រយោគ​ sentent</h2>
+    <p>ពាក្យដែរមានសេចក្ដីគ្របគ្រាន់</p>
+    <ul>
+        <!-- menu ជាបញ្ជីរាយតំណរប្រើដោយមេធាតុ​ulកូនធាតុliនឹងចៅa -->
+        <li><a href="../index.html">ទំព័រដើម</a></li>
+        <!--number side  ចុចហើយអត់ទៅណា​ ព្រោះទំព័ដើម<a href="content/head_and_text.html">ចំណងជើងនឹងអត្ថបទ</a>-->
+        <li> <a href="#">ចំណងជើងនឹងអត្ថបទ</a></li>
+        <li> <a href="formating_text.html">ទ្រងទ្រាយអត្ថបទ</a> </li>
+        <li><a href="list.html">បញ្ជី</a></li>
+    </ul>
+</body>
+</head>
+
+</html>

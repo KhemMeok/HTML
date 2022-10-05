@@ -1,0 +1,188 @@
+<html lang="km">
+
+<head>
+    <title>សំណុំបែបបទ</title>
+    <style type="text/css">
+        .ibutton {
+            padding: 5px;
+            background-color: blue;
+            border-radius: 8px;
+            color: yellow;
+        }
+
+        #html {
+            color: red;
+
+            text-align: end;
+        }
+    </style>
+</head>
+
+<body class="iButton">
+    <!--
+        <span>span1</span>
+        <p>p1</p><p>p2</p>
+    -->
+    <h1>សំណុំបែបបទ</h1>
+    <form action="អាស័យដ្ឋានអ្នកទទួល" method="get">
+        <center>
+            <div>
+                <label for="txt"> ប្រអបអត្ថបទ</label>
+                <input type="text" id="txt" name="txt">
+
+            </div>
+
+            <div>
+                <label for="pwd">ប្រអបពាក្យសំងាត់</label>
+                <input type="password" id="pwd" name="pwd">
+            </div>
+        </center>
+        <div>
+            <label for="ddl">ប្រអបទម្លាកជ្រើសរើស</label>
+            <select name="ddl" id="ddl">
+                <option value="1">ទម្លាក់ជ្រើសរើស១</option>
+                <option value="2">ទម្លាក់ជ្រើសរើស២</option>
+                <option value="3">ទម្លាក់ជ្រើសរើស៣</option>
+
+            </select>
+
+        </div>
+        <div>
+            <label for="lst">បញ្ជីជម្រើស</label>
+            <select name="lst" id="lst" multiple>
+                <option value="1">ជម្រើសទី១</option>
+                <option value="2">ជម្រើសទី២</option>
+                <option value="3">ជម្រើសទី៣</option>
+
+            </select>
+        </div>
+        <div>
+            <label for="chk1">ប្រអបធីកទី១ </label>
+            <input type="checkbox" value="c1" id="chk1" name="chk1">
+            <label for="chk2">ប្រអបធីកទី២</label>
+            <input type="checkbox" value="c2" name="chk2" id="chk2">
+            <label for="chk3">ប្រអបធីកទី៣</label>
+            <input type="checkbox" value="c3" name="chk3" id="chk3">
+        </div>
+        <div>
+            <label for="rdo1">ប្រអបជំម្រើសទី១</label>
+            <input type="radio" value="rdo1" name="rdo" id="rdo1">
+            <label for="rdo2">ប្រអបជំម្រើសទី២</label>
+            <input type="radio" value="rdo2" name="rdo" id="rdo2">
+            <label for="rdo1">ប្រអបជំម្រើសទី៣</label>
+            <input type="radio" value="rdo3" name="rdo" id="rdo3">
+
+        </div>
+        <center>
+
+
+            <div>
+                <input type="button" id="btn" name="btn" value="ប៊ូតុង​ Button" class="ibutton">
+                <input type="reset" id="rst" name="rst" value="សារថ្មី​ reset" class="ibutton">
+                <input type="submit" id="smt" name="smt" value="​បញ្ជូន​ submit" class="ibutton">
+            </div>
+            <pre>
+            function testFunction( strText )
+            {
+             alert (strText)
+            }
+            </pre>
+
+        </center>
+
+    </form>
+    <!-- NonbreakingSpaces-->
+    <p>An example of this technique appears in the movie "12&nbsp;Angry&nbsp;Men."</p>
+
+    <p>
+        this is <u>underlined</u> <i>paragraph</i>
+        <!--u underlined  i italic-->
+    </p>
+
+    <!--All attributes are made up of two parts: 
+        a name : is the property you want to set
+        a value: is what you want the value of the 
+        property to be set and always put within 
+        quotations.
+        values of align attribute:
+         left, 
+         center  
+         right.
+
+    -->
+    <p align="left">This is left Aligned</p>
+    <p align="center">This is center Aligned</p>
+    <p align="right">This is right Aligned</p>
+    <p align="right"> this a i</p>
+
+
+    <!--Core Attributes -->
+    <!--he four core attributes(លក្ខណះ) that can be used on the majority(ភាគច្រើន) of HTML elements (although not all) 
+are:
+- Id
+- Title
+- Class
+- Style
+-->
+    <!--The Id Attribute
+The id attribute of an HTML tag can be used to uniquely identify any element within an HTML 
+page. There are two primary reasons that you might want to use an id attribute on an 
+element:
+ If an element carries an id attribute as a unique identifier, it is possible to identify just 
+that element and its content.
+ If you have two elements of the same name within a Web page (or style sheet), you 
+can use the id attribute to distinguish between elements that have the same name.
+We will discuss style sheet in separate tutorial. For now, let's use the id attribute to distinguish 
+between two paragraph elements as shown below.-->
+
+    <p id="html">This para explains what is HTML</p>
+
+    <!--The title Attribute
+The title attribute gives a suggested title for the element. They syntax for the title attribute 
+is similar as explained for id attribute:
+The behavior of this attribute will depend upon the element that carries it, although it is often 
+displayed as a tooltip when cursor comes over the element or while the element is loading.
+-->
+    <h3 title="Hello HTML!">Titled Heading Tag Example</h3>
+    <!--The class Attribute
+The class attribute is used to associate an element with a style sheet, and specifies the class 
+of element. You will learn more about the use of the class attribute when you will learn 
+Cascading Style Sheet (CSS). So for now you can avoid it.-->
+
+    <!--Internationalization Attributes
+
+There are three internationalization attributes, which are available for most (although not all) 
+XHTML elements.
+ dir
+ lang
+ xml:lang
+-->
+    <!--The dir Attribute
+The dir attribute allows you to indicate(បញ្ជាក) to the browser about the direction in which the text 
+should flow. The dir attribute can take one of two values, as you can see in the table that 
+follows:
+​​​​​​ltr :  Left to right (the default value)
+rtl : Right to left (for languages such as Hebrew or Arabic that are read right to left)
+
+-->
+    <p dir="rtl">
+        this is show dir rtl
+    </p>
+    <p dir="ltr">
+        this is show dir rtl
+    </p>
+
+    <!--The lang Attribute
+        
+The lang attribute allows you to indicate the main language used in a document, but this 
+attribute was kept in HTML only for backwards(ខាងក្រោយ) compatibility(ភាពឆបគ្នា) with 
+earlier versions of HTML. 
+This attribute has been replaced by the xml:lang attribute in new XHTML documents.
+
+    -->
+
+
+
+</body>
+
+</html>

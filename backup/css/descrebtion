@@ -1,0 +1,5 @@
+    
+    selector { declaration1;declaration2;...;declarationN;}
+
+    declaration 
+                 proprety : values
