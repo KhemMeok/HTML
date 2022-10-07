@@ -2,3 +2,124 @@
     margin: 0;
     padding: 0;
 }
+
+html {
+    font: 16px Samsung Khmer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 16px 0;
+    font-family: 'Samsung Khmer';
+    padding-left: 48px;
+}
+
+ul,
+ol,
+table,
+from,
+p {
+    padding-left: 80px;
+}
+
+.hmenu {
+    list-style-type: none;
+    background-color: black;
+    padding: 8px;
+
+
+
+}
+
+.hmenu li {
+    display: inline-block;
+    width: 14%;
+
+}
+
+.hmenu a:hover {
+    background-color: gold;
+}
+
+album {
+    list-style: none;
+    width: 600px;
+    margin: 0 auto;
+}
+
+album {
+    width: 600px;
+    height: 350px;
+    border-radius: 6px;
+}
+
+#tbl {
+    width: 450px;
+    margin: 16px auto 0;
+    border-collapse: collapse;
+}
+
+#tbl th,
+#tbl ed {
+    padding: 8px 16px;
+}
+
+#tbl th:nth-child(1) {
+    border-top-left-radius: 8px;
+}
+
+#tbl th:nth-child(3) {
+    border-top-right-radius: 8px;
+}
+
+#tbl tr:nth-child(1) {
+    border-top-left-radius: 8px;
+    font-family: 'Samsung Khmer';
+    background-color: brown;
+    color: wheat;
+
+}
+
+#tbl tr:nth-child(2) {
+    background-color: lightcyan;
+
+}
+
+#frm {
+    width: 418px;
+    margin: 16px auto;
+    border: 1px solid gray;
+    border-radius: 8px;
+    padding: 0 24px 24px 32px;
+
+}
+
+#frm h2 {
+    margin: 0 0 16px;
+    padding: 12px 0 4px;
+    background-color: black;
+    text-align: center;
+    color: white;
+
+}
+
+#frm label {
+    display: inline-block;
+    width: 131px;
+
+}
+
+#chk label,
+#rdo lable {
+    display: inline;
+
+}
+
+.ibutton {
+    width: 31%;
+    margin: 8px 5px 0 0;
+}
