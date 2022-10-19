@@ -1,0 +1,47 @@
+<html lang="km">
+
+<head>
+    <title>
+        Object in HTML
+    </title>
+    <style type="text/css">
+        #rnd {
+            display: block;
+            font: 32px Times, Serif;
+            background-color: gold;
+            padding: 48px 32px;
+            width: 64px;
+            height: 32px;
+            margin: 32px auto;
+            border: 1px solid gray;
+            border-radius: 50%;
+            text-align: center;
+
+
+
+        }
+
+        body {
+            background-color: purple;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <p>លេខចៃដន្យ</p>
+    <span id="rnd">
+        15
+    </span>
+
+    <script type="text/javascript">
+
+        window.setInterval(function () {
+            document.getElementById("rnd").textContent
+                = Math.floor(Math.random() * 10) + 5;
+        }, 1000);
+    </script>
+</body>
+
+</html>
