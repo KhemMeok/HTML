@@ -1,0 +1,29 @@
+<html lang="km">
+<head>
+     <title>Jquery custome effcet and Animation</title>
+     <style>
+        #cea{
+            position: relative; /*ធាតុមាន id = cea កំណតយកទីតាំងធៀបទីតាំងបច្ចុប្បន្ន*/
+
+        }
+     </style>
+</head>
+<body>
+    <img src="../MyImage/2.jpg" alt="pic" id="cea">
+    <script src="../script/jquery/jquery-3.6.1.js"></script>
+    <script>
+        $(function(){
+            //animate ជា method ដែរយក​ css property ដែរមានតម្លៃជាលេខមកធ្វើជាបែបផែនមានចលនាតាមតម្រូវការ
+            $("#cea").animate({left:"250px"},2000);   //ចាបផ្ដើមពី left 0 ទៅបញ្ចប់ត្រង left 250px ក្នុងរយះពេល ២​វិនាទី
+             $("#cea").animate({top:"250px"},2000);
+            $("#cea").animate({left:"0px",top:"0px"},2000);
+            $("#cea").animate({width:"256px",hight:"256px"},2000);
+            $("#cea").animate({width:"128px",hight:"128px"},2000);
+            $("#cea").animate({opacity:"0"},1000); //opacity កំណត់ភាពច្បាសមានតម្លៃចន្លោះ 0 , 1
+            
+           
+        });
+    </script>
+    
+</body>
+</html>

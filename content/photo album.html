@@ -9,18 +9,42 @@
 
 <body>
     <h1>រូកថតខ្ញុំ</h1>
-    <ul​<!-- បញ្ជីរាយរូកភាព​មានមេធាតុ​ulកូនធាតុliចៅធាតុimg -->
-        <!-- <li><img src="../p21.jpg​​ អាស័យដ្ឋាន" alt="no pic load អត្ថបទឆ្លាសគ្នានឹងរូកភាព"></li>-->
-        <li><img src="../p21.jpg" alt="no pic load អត្ថបទឆ្លាសគ្នានឹងរូកភាព"></li>
-        <li><img src="../image/165424.jpg" alt="no pic load អត្ថបទឆ្លាសគ្នានឹងរូកភាព"></li>
-        <li><img src="../image/665374.jpg" alt="no pic load អត្ថបទឆ្លាសគ្នានឹងរូកភាព"></li>
-        <li><img src="../image/681016.jpg" alt="no pic load អត្ថបទឆ្លាសគ្នានឹងរូកភាព"></li>
-        <li><img src="../image/698363.png" alt="no pic load អត្ថបទឆ្លាសគ្នានឹងរូកភាព"></li>
+    <div class="cover">
+        <img id="feature" src="../MyImage/1.jpg" alt="error">
+        <p id="caption">mypic</p>
+        <ul <!--បញ្ជីរាយរូកភាព​មានមេធាតុulកូនធាតុliចៅធាតុimg -->
+            <!-- <li><img src="../p21.jpg​​ អាស័យដ្ឋាន" alt="no pic load អត្ថបទឆ្លាសគ្នានឹងរូកភាព"></li>-->
+            <li><img src="../p21.jpg" alt="no pic load អត្ថបទឆ្លាសគ្នានឹងរូកភាព"></li>
+            <li><img src="../MyImage/5.jpg" alt="no pic load អត្ថបទឆ្លាសគ្នានឹងរូកភាព"></li>
+            <li><img src="../MyImage/2.jpg" alt="no pic load អត្ថបទឆ្លាសគ្នានឹងរូកភាព"></li>
+            <li><img src="../MyImage/3.jpg" alt="no pic load អត្ថបទឆ្លាសគ្នានឹងរូកភាព"></li>
+            <li><img src="../MyImage/4.png" alt="no pic load អត្ថបទឆ្លាសគ្នានឹងរូកភាព"></li>
 
         </ul>
-        <!-- img តាំងរូកភាពក្នុងវេបផេកដោយបញ្ជាក់អាស័យដ្ឋានគុណលក្ខណះ​ 
+    </div>
+    <p id="dynamic" style="font: 24px , times; background: yellow;">hi</p>
+    <!-- img តាំងរូកភាពក្នុងវេបផេកដោយបញ្ជាក់អាស័យដ្ឋានគុណលក្ខណះ​ 
             Source and អត្ថបទឆ្លាសគ្នានឹងរូកភាព ក្នុងគុណលក្ខណះ​ Alternating text
         -->
+    <script>
+        let feature = document.querySelector("#feature");
+        let dynamic = document.querySelector("#dynamic");
+        dynamic.textContent = feature.getAttribute("src");
+
+        let imgs = document.querySelectorAll("../MyImage img");
+        // length ជា​ property  ប្រាបចំនួនធាតុដែរមានក្នងអឺរ៉េ។
+
+        dynamic.textContent = imgs.length;
+        // dynamic.textContent = imgs[1].getAttribute("alt");
+
+        let i;
+        for (i = 0; i < 5; i++)
+            dynamic.innerHTML = dynamic.innerHTML + "<br>" + imgs[i].getAttribute("src");
+        imgs.forEach(function (imgs) {
+            dynamic.innerHTML = dynamic.innerHTML + "<hr>" + imgs.getAttribute("alt");
+        })
+
+    </script>
 
 </body>
 

@@ -1,0 +1,26 @@
+<html lang="km">
+<head>
+   <title>Jquery</title>
+   <!--របៀបទី១នៃការប្រើ jquery-->
+   <script src="../script/jquery/jquery-3.6.1.js"></script>
+   <!--របៀបទី២
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+-->
+</head>
+<body>
+    <p id="jq1"></p>
+    <p id="jq2"></p>
+    <img id="jq3">
+    <p id="jq4">ពុម្ភអក្ស</p>
+    <!-- <img src="../MyImage/1.jpg" alt=""> -->
+    <script>
+       $(function(){
+        $("#jq1").text("ខ្លឹមសារថែមដោយ jquery");
+        $("#jq2").html("ខ្លឹមសារនឹងគូសបន្ទាតថែមដោយ jQuery <hr>");
+        $("#jq3").attr("src","../MyImage/1.jpg");
+        $("#jq4").css("font","32px 'Khmer OS Siemreap'")
+
+       })
+    </script>
+</body>
+</html>

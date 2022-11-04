@@ -1,0 +1,80 @@
+<html lang="km">
+
+<head>
+
+</head>
+
+<body>
+    <div id="effects">
+        <div id="effect">
+            <img src="../MyImage/5.jpg" alt="pic">
+
+        </div>
+        <form>
+            <input type="button" value="Hide" id="hide">
+            <input type="button" value="Show" id="show">
+            <input type="button" value="Hide | Show" id="tiggleHS">
+            <input type="button" value="Fade Out" id="fadeOut">
+            <input type="button" value="Fade In" id="fadein">
+            <input type="button" value="Fade In | Out" id="fadeIO">
+            <input type="text" placeholder="Fade %" id="fadeTo">
+            <input type="button" value="Slide Up" id="slideUp">
+            <input type="button" value="Slide Down" id="slideDown">
+            <input type="button" value="Slide Up | Down" id="slideUD">
+
+
+
+        </form>
+        <h1>Jquery Effect and Animatioin</h1>
+
+    </div>
+
+    <script src="../script/jquery/jquery-3.6.1.js"> </script>
+    <script>
+        //Jquery event $(selector).ឈ្មោះ event(អនុគមន៍)
+        $(function () {
+            $("#hide").click(function () {
+                $("img").hide();  //លាក់
+
+            });
+            $("#show").click(function () {
+                $("img").show();  //បង្ហាញ
+
+            });
+            $("#toggleHS").click(function () {
+                $("img").toggle();  //លាក់ ឬ​ បង្ហាញអាស្រ័យស្ថានភាព
+
+            });
+            $("#fadeOut").click(function () {
+                $("img").fadeOut(2000);  //បន្ថយភាពច្បាស់ 2000ms = 2s
+
+            });
+            $("#fadeIn").click(function () {
+                $("img").fadeIn(2000);  //បន្ថែមភាពច្បាស
+
+            });
+            $("#fadeIO").click(function () {
+                $("img").fadeToggle(2000);  //បន្ថែមភាពច្បាស​ឬបន្ថយភាពច្បាស់
+
+            });
+            $("#fadeTO").change(function () {
+                $("img").fadeTo(2000, $(this).val() / 100);  // fadeTo(time,%of fade)កំណត់ភាពច្បាសត្រឹមភាគរយ
+
+            });
+            $("#slideUp").click(function () {
+                $("img").slideUp(2000);  //មូររូកភាពទុក
+
+            });
+            $("#slideDown").click(function () {
+                $("img").slideDown(2000);  //លាររូកភាពវិញ
+
+            });
+            $("#slideUD").click(function () {
+                $("img").slideToggle(2000);  //មូរ​ ឬ លាររូកភាព
+
+            });
+        });
+    </script>
+</body>
+
+</html>
