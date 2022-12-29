@@ -1,0 +1,58 @@
+/* students{
+    background-color: cyan;
+    padding: 20px;
+} */
+student {
+    display: block;
+    background-color: gainsboro;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+student1 {
+    display: block;
+    background-color: green;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+student2 {
+    display: block;
+    background-color: darkblue;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+student3 {
+    display: block;
+    background-color: firebrick;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+person,
+abSent {
+    display: inline-block;
+    padding: 2px;
+    text-align: center;
+    width: 24px;
+    border-radius: 50%;
+}
+
+person {
+    background-color: purple;
+}
+
+abSent {
+    background-color: plum;
+}
+
+book{
+    display: block;
+    color: yellow;
+    background-color: darkcyan;
+}
+year , price {
+    background-color: cadetblue;
+    border-radius: 20px;
+}
