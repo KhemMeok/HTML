@@ -4,32 +4,40 @@
 ភា្ជប់ xml ឲដំណើរការជាមួយ css
 
 -->
-<?xml-stylesheet type="text/css" href="../style/PA.css"?>
+<?xml-stylesheet type="text/xsl" href="../data/PA.xsl"?>
 <students>
-<student studentId="101" classId="E4">
-    <studentNameKh>ម៉ឹក​ ឃិម</studentNameKh>
-    <studentNameIt>Meok Khem</studentNameIt>
-    <person>1</person>
-    <abSent>4</abSent>
-</student>
-<student1 studentId="102" classId="E4">
-    <studentNameKh>ម៉ឹក​ ខាត់</studentNameKh>
-    <studentNameIt>Meok Khem</studentNameIt>
-    <person>1</person>
-    <abSent>4</abSent>
-</student1>
-<student2 studentId="103" classId="E4">
-    <studentNameKh>ហេង​ កប</studentNameKh>
-    <studentNameIt>Meok Khem</studentNameIt>
-    <person>1</person>
-    <abSent>4</abSent>
-</student2>
-<student3 studentId="104" classId="E4">
-    <studentNameKh>ពុក​ ម៉ា</studentNameKh>
-    <studentNameIt>Meok Khem</studentNameIt>
-    <person>1</person>
-    <abSent>4</abSent>
-</student3>
+    <student studentid="101" classid="34">
+        <studentNameKh>ម៉ឹក​ ឃិម</studentNameKh>
+        <studentNameIt>Meok Khem</studentNameIt>
+        <person>1</person>
+        <abSent>13</abSent>
+    </student>
+    <student studentid="102" classid="34">
+        <studentNameKh>ម៉ឹក​
+            ខាត់</studentNameKh>
+        <studentNameIt>Meok
+            Khem</studentNameIt>
+        <person>
+            1</person>
+        <abSent>4</abSent>
+    </student>
+    <student studentid="103" classid="34">
+        <studentNameKh>ហេង​ កប</studentNameKh>
+        <studentNameIt>Meok
+            Khem</studentNameIt>
+        <person>
+            1</person>
+        <abSent>
+            4</abSent>
+    </student>
+    <student studentid="104" classid="34">
+        <studentNameKh>ពុក​
+            ម៉ា</studentNameKh>
+        <studentNameIt>Meok Khem</studentNameIt>
+        <person>
+            1</person>
+        <abSent>4</abSent>
+    </student>
 </students>
 
 <!--
